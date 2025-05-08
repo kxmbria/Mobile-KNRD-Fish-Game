@@ -2,6 +2,7 @@ const C3 = self.C3;
 self.C3_GetObjectRefTable = function () {
 	return [
 		C3.Plugins.Sprite,
+		C3.Behaviors.Sin,
 		C3.Plugins.Text,
 		C3.Plugins.Touch,
 		C3.Plugins.Dictionary,
@@ -35,12 +36,15 @@ self.C3_JsPropNameTable = [
 	{NextWiggleTime: 0},
 	{Clickable: 0},
 	{Bobber: 0},
+	{Sine: 0},
 	{fish: 0},
 	{YouveCaught: 0},
 	{Cast: 0},
 	{CastAgain: 0},
 	{Touch: 0},
 	{FishTextDict: 0},
+	{MoreInfo: 0},
+	{INFO: 0},
 	{RandomIndex: 0}
 ];
 
@@ -53,5 +57,7 @@ self.InstanceType = {
 	Cast: class extends self.ITextInstance {},
 	CastAgain: class extends self.ITextInstance {},
 	Touch: class extends self.IInstance {},
-	FishTextDict: class extends self.IDictionaryInstance {}
+	FishTextDict: class extends self.IDictionaryInstance {},
+	MoreInfo: class extends self.ITextInstance {},
+	INFO: class extends self.IDictionaryInstance {}
 }
