@@ -45,7 +45,10 @@ self.C3_JsPropNameTable = [
 	{FishTextDict: 0},
 	{MoreInfo: 0},
 	{INFO: 0},
-	{RandomIndex: 0}
+	{Sprite: 0},
+	{RandomIndex: 0},
+	{ReelProgress: 0},
+	{IsReeling: 0}
 ];
 
 self.InstanceType = {
@@ -59,5 +62,6 @@ self.InstanceType = {
 	Touch: class extends self.IInstance {},
 	FishTextDict: class extends self.IDictionaryInstance {},
 	MoreInfo: class extends self.ITextInstance {},
-	INFO: class extends self.IDictionaryInstance {}
+	INFO: class extends self.IDictionaryInstance {},
+	Sprite: class extends self.ISpriteInstance {}
 }
