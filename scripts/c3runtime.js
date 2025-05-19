@@ -1237,20 +1237,6 @@ self.C3_ExpressionFuncs = [
 			return () => (f0() + f1(3, 6));
 		},
 		() => 1,
-		() => "0",
-		() => "You've caught a \nWESTSLOPE CUTTHROAT!",
-		() => "1",
-		() => "You've caught a \nBULL TROUT!",
-		() => "2",
-		() => "You've caught a \nMOUNTAIN WHITEFISH!",
-		() => "3",
-		() => "You've caught a \nRAINBOW TROUT!",
-		() => "4",
-		() => "You've caught a \nNORTHERN PIKE!",
-		() => "5",
-		() => "You've caught a \nLARGESCALE SUCKER!",
-		() => "6",
-		() => "You've caught a \nBROOK TROUT!",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();
@@ -1266,27 +1252,13 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
 		},
-		p => {
-			const n0 = p._GetNode(0);
-			const v1 = p._GetNode(1).GetVar();
-			return () => n0.ExpObject((v1.GetValue()).toString());
-		},
-		() => 95,
+		() => 225,
 		() => 980,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const f1 = p._GetNode(1).GetBoundMethod();
 			return () => (f0() + f1(3, 8));
-		},
-		() => 94,
-		() => 558,
-		() => "A long time ago, Westslope Cutthroat Trout lived in lots of rivers and streams. But now, they only live in a few of those places. One area, called the Pend Oreille Basin, used to have more of these fish than anywhere else in Washington!",
-		() => "Bull Trout are special fish that live in the Pend Oreille area. They don’t like it when their homes get dirty or too warm, so when they’re not doing well, it’s a sign that the environment needs help too. That’s why the Pend Oreille Salmonid Recovery Team picked Bull Trout as the most important fish to protect in the area.",
-		() => "Mountain Whitefish are shiny silver fish with big scales, a forked tail, and a small mouth that points down. They like to live in cold, deep rivers and lakes, especially in places like the Columbia River. They eat tiny water bugs, and as they grow, they eat more kinds of food.",
-		() => "Rainbow trout are colorful fish that many people love to catch! They live in rivers and lakes, and they’re known for being strong swimmers. Rainbow trout are from the Pacific Northwest, but now they live in lots of places around the world. Some rainbow trout swim all the way to the ocean and back, while others stay in freshwater their whole lives.",
-		() => "Northern pike are big, sneaky fish that don’t belong in Washington. They were brought here by people a long time ago, and now they’re causing problems. Pike eat a lot of other fish — even baby salmon that need our help! If someone catches a pike, they should take a picture and tell the fish experts right away.",
-		() => "Largescale suckers are fish that live near the bottom of rivers and lakes. They have big scales, a round nose, and a mouth that points down. Largescale suckers are an important part of the river, but some people don’t understand them and think they cause problems for salmon and trout — even though that’s not true!",
-		() => "Brook Trout are fish that come from the eastern United States. They like to live in cool, small streams and eat bugs and tiny fish.\n\nBrook Trout can mix with Bull Trout, which can be a problem because it makes fewer bull trout. They also fight for food and space with other fish like cutthroat trout. You can tell a Brook Trout apart by the squiggly, worm-like lines on their backs!"
+		}
 ];
 
 

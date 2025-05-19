@@ -8,26 +8,20 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Dictionary,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.Sprite.Acts.SetAnim,
-		C3.Plugins.Text.Acts.Destroy,
+		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.System.Exps.random,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.System.Exps.time,
-		C3.Plugins.System.Cnds.OnLayoutStart,
-		C3.Plugins.Dictionary.Acts.AddKey,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
 		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
 		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.System.Exps.int,
-		C3.Plugins.Sprite.Acts.SetAnimFrame,
-		C3.Plugins.Text.Acts.SetText,
-		C3.Plugins.Dictionary.Exps.Get,
-		C3.Plugins.Text.Acts.SetVisible,
-		C3.Plugins.Sprite.Acts.Destroy
+		C3.Plugins.Sprite.Acts.SetAnimFrame
 	];
 };
 self.C3_JsPropNameTable = [
@@ -39,13 +33,12 @@ self.C3_JsPropNameTable = [
 	{Sine: 0},
 	{fish: 0},
 	{YouveCaught: 0},
-	{Cast: 0},
-	{CastAgain: 0},
 	{Touch: 0},
 	{FishTextDict: 0},
-	{MoreInfo: 0},
-	{INFO: 0},
 	{Sprite: 0},
+	{Castimg: 0},
+	{castagainbutton: 0},
+	{catch: 0},
 	{RandomIndex: 0},
 	{ReelProgress: 0},
 	{IsReeling: 0}
@@ -57,11 +50,10 @@ self.InstanceType = {
 	Bobber: class extends self.ISpriteInstance {},
 	fish: class extends self.ISpriteInstance {},
 	YouveCaught: class extends self.ITextInstance {},
-	Cast: class extends self.ITextInstance {},
-	CastAgain: class extends self.ITextInstance {},
 	Touch: class extends self.IInstance {},
 	FishTextDict: class extends self.IDictionaryInstance {},
-	MoreInfo: class extends self.ITextInstance {},
-	INFO: class extends self.IDictionaryInstance {},
-	Sprite: class extends self.ISpriteInstance {}
+	Sprite: class extends self.ISpriteInstance {},
+	Castimg: class extends self.ISpriteInstance {},
+	castagainbutton: class extends self.ISpriteInstance {},
+	catch: class extends self.ISpriteInstance {}
 }
